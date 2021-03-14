@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+    <head> 
+    <meta charset="utf-8">
+    </head>
+
+<h1> My Blog Post </h1>
+<p> Lorem ipsum </p>
+
+
+<img src="headshot.jpg" alt="my headshot">
+
+
+<label for="phonenumber">Please type in  your phone number</label>
+<input type="text" id="phonenumber" name="phonenumber">
+
+
+<table>
+    <caption>Students</caption>
+    <tr>
+        <th>first name</th>
+        <th>last name</th>
+    </tr>
+    <tr>
+        <td>Tracy</td>
+        <td>White</td>
+    </tr>
+</table>
