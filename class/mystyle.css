@@ -1,0 +1,38 @@
+h1 {
+    color: #ff0000;
+    /* hex color requires the pund sign */
+    /*sixs digets starting with red, then green then blue*/
+}
+
+    /* these threee selectors are pseudo selectors */
+    /* colon separates the selector from its state */
+
+a:link {
+    color:#00ff00;
+}
+
+a:visited {
+    color:#0000ff;
+}
+
+a:hover {
+    color:#8000ff;
+    background-color: #00eeff;
+}
+
+.lookdifferent:hover {
+    color: #999999;
+}
+/* above uses a class selector with the pseudo state */
+
+body {
+    background-image: url(../images/linkedin.png);
+    background-size: 100%;
+    background-color: #c9c9ab;
+}
+/* background color for entire page */
+
+p {
+    background-color: #ffffff;
+}
+    
