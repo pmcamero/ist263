@@ -12,8 +12,8 @@
             .map {flex: 1; order: 2; margin: 2em;}
             .form {flex: 1; order: 1;margin: 2em;}
             .floating, .flexbox {padding: 4em; margin: 4em;}
-            .floating {background-color: #e8dbc9; border-radius: 1em;}
-            .flexbox{background-color: #e6e6e6;border-radius: 1em;}
+            .floating {background-color: #f7f3ed; border-radius: 1em;}
+            .flexbox{background-color: #f2f2f2;border-radius: 1em;}
         </style>
     </head>
     <body>
@@ -68,13 +68,15 @@
                 <input type="text" name="firstname" id="firstname"><br>
             
             Please choose why you have come to my page.
-            
+        <fieldset>
+        <legend>Reason for visit</legend>
                 <input type="radio" name="reasoning" id="reasonone" value="class">
                     <label for="reasonone">class</label>
                 <input type="radio" name="reasoning" id="reasontwo" value="job">
                     <label for="reasontwo">job</label>
                 <input type="radio" name="reasoning" id="reasonthree" value="other">
                     <label for="reasonthree">other</label>
+        </fieldset>
             <br> <br> <br>
             <label for="comments">If you selected other for the question above, please elaborate</label>
             <br> <br>
