@@ -1,18 +1,18 @@
-body {background-color: #EAE7DC;}
-p {color: #303C6C;}
+body {background-color: #ece9df;}
+p {color: #283158;}
 a {
-    color: #8E8D8A;
-    background-color: #D8C3A5;
+    color: #686764;
+    background-color: #e8dbc9;
 }
-h1 {color: #E85A4F;}
-h2 {color: #E85A4F;}
+h1 {color: #e22a1d;}
+h2 {color: #e22a1d;}
 nav {
-    background-color: #D8C3A5;
+    background-color: #e8dbc9;
     padding: .5em;
     margin-bottom: 2em;
 }
-nav a {color:#E98074;}
-nav a:hover {background-color: #C0C0C0;} 
+nav a {color:#e35d4f;}
+nav a:hover {background-color: #e6e6e6;} 
 
 @media only screen and (max-width: 920px)
     {
