@@ -10,7 +10,7 @@ nav {
     background-color: #f7f3ed;
     padding: .5em;
     margin-bottom: 2em;
-    font-weight:bold
+    font-weight:bolder;
 }
 nav a {color:#b02a1c;}
 nav a:hover {background-color: #f2f2f2;} 
