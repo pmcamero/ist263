@@ -6,14 +6,36 @@
         <title>Linguistics Misconceptions</title>
         <link rel="stylesheet" href="style.css">
         <style>
-            
+            @media only screen and (max-width: 600px) {
+                span {display: none;}
+                #hamicon {display: block;}
+                nav a {
+                    display: block;
+                    padding: 10px 0px;
+                }
+                #navlinks {display: none;}
+            }
         </style>
+         <script>
+            function changenav () {
+               if (document.getElementById("navlinks").style.getPropertyValue("display") == 'block') {
+                   document.getElementById("navlinks").style.display = "none";
+               }
+               
+               else {
+                   document.getElementById("navlinks").style.display = "block";
+               }
+           }
+       </script>
     </head>
     <body>
         <nav>
+            <img src="../site-media/hamburger.png" id="hamicon" width="35" alt="hamburger icon" onclick="changenav();">
+            <div id="navlinks">
             <a href="index.html">Home</a> <span>|</span>
             <a href="misconceptions.html">Misconceptions</a> <span>|</span>
             <a href="qualifications.html">Qualifications</a>
+            </div>
         </nav>
     <main>
     <div>

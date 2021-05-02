@@ -6,33 +6,146 @@
         <title>Introduction to Linguistics</title>
         <link rel="stylesheet" href="style.css">
         <style>
-
+            @media only screen and (max-width: 600px) {
+                span {display: none;}
+                #hamicon {display: block;}
+                nav a {
+                    display: block;
+                    padding: 10px 0px;
+                }
+                #navlinks {display: none;}
+            }
+            #slideshow-container {
+                background-color: #ECECEC;
+                width: 1200px;
+                margin: auto;
+            }
+            #everydayconvo {float:left;}
+            .clear {clear: both;}
+            #bigimages{
+                margin-right: 100px;
+                float:left;
+            }
+            #linguisticinfo {
+                padding: 100px;
+            }
+            #thumbnails {
+                margin:auto; 
+                padding-top: 20px;
+                display: flex;
+                flex-wrap: wrap;
+            }
+            .clear {clear:both;}
+            .phonologybox, .morphologybox, .syntaxbox, .semanticsbox, .pragmaticsbox {flex:1;}
+            #phonologythumb, #morphologythumb, #syntaxthumb, #semanticsthumb, #pragmaticsthumb {width: 150px;}
+            #morphology, #syntax, #semantics, #pragmatics, #formalconvo, #casualconvo {display: none;}
+            #morphologyinfo, #syntaxinfo, #semanticsinfo, #pragmaticsinfo {display: none;}
         </style>
+        <script>
+             function changenav () {
+                if (document.getElementById("navlinks").style.getPropertyValue("display") == 'block') {
+                    document.getElementById("navlinks").style.display = "none";
+                }
+                
+                else {
+                    document.getElementById("navlinks").style.display = "block";
+                }
+            }
+            function ImageOff () {
+                document.getElementById('phonology').style.display = 'none';
+                document.getElementById('morphology').style.display = 'none';
+                document.getElementById('syntax').style.display = 'none';
+                document.getElementById('semantics').style.display = 'none';
+                document.getElementById('pragmatics').style.display = 'none';
+                document.getElementById('formalconvo').style.display = 'none';
+                document.getElementById('casualconvo').style.display = 'none';
+                document.getElementById('phonologyinfo').style.display = 'none';
+                document.getElementById('morphologyinfo').style.display = 'none';
+                document.getElementById('syntaxinfo').style.display = 'none';
+                document.getElementById('semanticsinfo').style.display = 'none';
+                document.getElementById('pragmaticsinfo').style.display = 'none';
+            }
+            function PhonologyOn () {
+                document.getElementById('phonology').style.display = 'block';
+                document.getElementById('phonologyinfo').style.display = 'block';
+            }
+            function MorphologyOn () {
+                document.getElementById('morphology').style.display = 'block';
+                document.getElementById('morphologyinfo').style.display = 'block';
+            }
+            function SyntaxOn () {
+                document.getElementById('syntax').style.display = 'block';
+                document.getElementById('syntaxinfo').style.display = 'block';
+            }
+            function SemanticsOn () {
+                document.getElementById('semantics').style.display = 'block';
+                document.getElementById('semanticsinfo').style.display = 'block';
+            }
+            function PragmaticsOn () {
+                document.getElementById('pragmaticsinfo').style.display = 'block';
+                document.getElementById('formalconvo').style.display = 'block';
+                document.getElementById('casualconvo').style.display = 'block';
+            } 
+        </script>
     </head>
     <body>
             <nav>
+                <img src="../site-media/hamburger.png" id="hamicon" width="35" alt="hamburger icon" onclick="changenav();">
+                <div id="navlinks">
                 <a href="index.html">Home</a> <span>|</span>
                 <a href="misconceptions.html">Misconceptions</a> <span>|</span>
                 <a href="qualifications.html">Qualifications</a>
+                </div>
             </nav>
                 <h1>Introduction to Linguistics</h1>
         <main>
-        <div>
-        
             <figure>
-            <img src="../site-media/conversation.png" alt="Everyday Conversation">
+                <img src="../site-media/conversation.png" alt="Everyday Conversation" id="everydayconvo">
             </figure>
             <p>
                 Linguistics is the study of languages. Now that overarching broad statement is easily broken down into the different fields of linguistics. Each of these branches of linguistics has its own specific focus, but they work together to give a greater understanding of human language.  The different branches of language structure and their respective specializations are:
             </p>
-            <ul>
-                <li> Phonetics - the study of the physical properties of speech <figure> <img src="../site-media/linguistics-transcription.png" alt="Phonetics and Phonology"> </figure> </li>
-                <li> Phonology - the study of speech sounds and systems of speech sounds </li>
-                <li> Morphology - the study of word formations <figure> <img src="../site-media/independently-morphology.png" alt="Morphology"> </figure> </li>
-                <li> Syntax - the study of sentence formation <figure> <img src="../site-media/syntax-tree.png" alt="Syntax"> </figure> </li>
-                <li> Semantics - The study of word meaning <figure> <img src="../site-media/semantics-photo.png" alt="Semantics"> </figure> </li>
-                <li> Pragmatics - The study of language use <figure> <img src="../site-media/formal-conversation.png" alt="Formal Conversation Representation"> <img src="../site-media/casual-conversation-2.png" alt="Casual Conversation Representation"> </figure> </li>
-            </ul>
+        <div class="clear"></div>
+        <div id="slideshow-container">
+            <div id="bigimages">
+                <figure> <img src="../site-media/linguistics-transcription.png" alt="Phonetics and Phonology" id="phonology"> </figure>
+                <figure> <img src="../site-media/independently-morphology.png" alt="Morphology" id="morphology"> </figure> 
+                <figure> <img src="../site-media/syntax-tree.png" alt="Syntax" id="syntax"> </figure> 
+                <figure> <img src="../site-media/semantics-photo.png" alt="Semantics" id="semantics"> </figure> 
+                <figure> <img src="../site-media/formal-conversation.png" alt="Formal Conversation Representation" id="formalconvo"> </figure>
+                <figure> <img src="../site-media/casual-conversation-2.png" alt="Casual Conversation Representation" id="casualconvo"> </figure>
+            </div>
+            <div id="linguisticinfo">
+                <div id="phonologyinfo">
+                    <h2>Phonetics and Phonology</h2>
+                    <p>Phonetics - the study of the physical properties of speech </p>
+                    <p>Phonology - the study of speech sounds and systems of speech sounds </p>
+                </div>
+                <div id="morphologyinfo">
+                    <h2>Morphology</h2>
+                    the study of word formations
+                </div>
+                <div id="syntaxinfo">
+                    <h2>Syntax</h2>
+                    the study of sentence formation
+                </div>
+                <div id="semanticsinfo">
+                    <h2>Semantics</h2>
+                    The study of word meaning
+                </div>
+                <div id="pragmaticsinfo">
+                    <h2>Pragmatics</h2>
+                    The study of language use 
+                </div>
+            </div>
+            <div id="thumbnails" class="clear">
+                <img src="../site-media/phonology-and-pragmatics.png" alt="phonology and pragmatics" id="phonologythumb" class="phonologybox" onclick="ImageOff(); PhonologyOn();">
+                <img src="../site-media/morphology.png" alt="morphology" id="morphologythumb" class="morphologybox" onclick="ImageOff(); MorphologyOn();">
+                <img src="../site-media/syntax.png" alt="syntax" id="syntaxthumb" class="syntaxbox" onclick="ImageOff(); SyntaxOn();">
+                <img src="../site-media/semantics.png" alt="semantics" id="semanticsthumb" class="semanticsbox" onclick="ImageOff(); SemanticsOn();">
+                <img src="../site-media/pragmatics.png" alt="pragmatics" id="pragmaticsthumb" class="pragmaticsbox" onclick="ImageOff(); PragmaticsOn();">
+            </div>
+        </div>
             <p>
                 Additionally, there are other fields of linguistics that go beyond the structure of language itself. Other interdisciplinary fields of linguistics include: 
             </p>

@@ -6,27 +6,70 @@
         <title>Linguistics Qualifications</title>
         <link rel="stylesheet" href="style.css">
         <style>
-            
+            @media only screen and (max-width: 600px) {
+                span {display: none;}
+                #hamicon {display: block;}
+                nav a {
+                    display: block;
+                    padding: 10px 0px;
+                }
+                #navlinks {display: none;}
+            }
+            .personal-image{
+                max-width: 100%;
+                width: 400px;
+                padding: 10px;
+                float: left;
+            }
+            #hol {
+                float:left;
+                margin: 20px;
+            }
+            #syracuse {margin: 20px;}
+            .clear {clear:both;}
         </style>
+         <script>
+            function changenav () {
+               if (document.getElementById("navlinks").style.getPropertyValue("display") == 'block') {
+                   document.getElementById("navlinks").style.display = "none";
+               }
+               
+               else {
+                   document.getElementById("navlinks").style.display = "block";
+               }
+           }
+           
+       </script>
     </head>
     <body>
         <nav>
+            <img src="../site-media/hamburger.png" id="hamicon" width="35" alt="hamburger icon" onclick="changenav();">
+            <div id="navlinks">
             <a href="index.html">Home</a> <span>|</span>
             <a href="misconceptions.html">Misconceptions</a> <span>|</span>
             <a href="qualifications.html">Qualifications</a>
+            </div>
         </nav>
     <main>
     <div>
             <h1>Why I am Qualified to talk about Linguistics</h1>
         <figure>
-            <img src="../site-media/also-me.png" alt="Peyton Cameron">
+            <img src="../site-media/also-me.png" alt="Peyton Cameron" class="personal-image">
         </figure>
+        <div id="bio">
+            <br> <br> <br> <br> <br> <br>
+            <h2>A bit about me!</h2>
+            
             <p>
                 At Syracuse University, I am an International Relations and Linguistics Studies double major with a minor in Information Management and Technology. I have spent a good portion of my undergraduate career studying linguistics and taking linguistics courses. As a junior at Syracuse, I have almost finished my linguistics major and I have written a research paper for essentially every linguistics course that I have taken. 
             </p>
+        </div>
+        <div class="clear"></div>
+        <hr>
         <figure>
-            <img src="../site-media/syracuse-university.png" alt="Hall of Languages at Syracuse University">
+            <img src="../site-media/syracuse-university.png" alt="Hall of Languages at Syracuse University" id="hol">
         </figure>
+        <div id="syracuse">
             <h2>Some courses at Syracuse that I have taken:</h2>
         
         <ul>
@@ -51,6 +94,8 @@
             <li> <a href="../site-media/social-media-variation-proposal.docx"> Research Proposal for LIN 373 on The Effect of Social Media on the Variation of English</a> </li>
             <li> <a href="../site-media/emoji-use-proposal.docx"> Library Based Research Paper for LIN 305 on How Emoji Use is Affected by and changes with age </a></li>
         </ul>
+        </div>
+        <div class="clear"></div>
     </div>
     </main>
     </body>
