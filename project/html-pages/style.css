@@ -9,11 +9,11 @@ nav {
         font-weight: bolder;
         color: #5DA2D5;
 }
-
 nav a:hover {color: #90CCF4;}
 p {color: #5DA2D5;}
 ul {color: #5DA2D5;}
 a {color: #90CCF4;}
-h1 {color: #F78888;}
+h1 {color: #F78888;font-weight:bold;}
+h2 {color: #F78888;font-weight:bold;}
 #hamicon {display: none;}
 img {max-width: 100%;}
