@@ -10,10 +10,25 @@ nav {
         color: #5DA2D5;
 }
 nav a:hover {color: #90CCF4;}
-p {color: #5DA2D5;}
-ul {color: #5DA2D5;}
-a {color: #90CCF4;}
-h1 {color: #F78888;font-weight:bold;}
-h2 {color: #F78888;font-weight:bold;}
+p {
+    color: #5DA2D5;
+    font-family: 'Poppins', sans-serif;
+}
+ul {
+    color: #5DA2D5;
+    font-family: 'Poppins', sans-serif;
+}
+a {
+    color: #90CCF4;
+    font-family: 'Poppins', sans-serif;
+}
+h1 {
+    color: #F78888;font-weight:bold;
+    font-family: 'Fira Sans', sans-serif;
+}
+h2 {
+    color: #F78888;font-weight:bold;
+    font-family: 'Fira Sans', sans-serif;
+}
 #hamicon {display: none;}
 img {max-width: 100%;}
