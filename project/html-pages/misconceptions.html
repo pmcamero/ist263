@@ -56,6 +56,16 @@
                 padding: 50px;
                 }
             .clear {clear:both;}
+            #skip-to-content {
+                position: absolute; 
+                left: -999px;
+                background-color: #f2f2f2; 
+                border: 1px solid #ECECEC;
+                }
+                #skip-to-content:focus {
+                position: absolute; 
+                left: 10px;
+                }
             @media only screen and (max-width: 600px) {
                 span {display: none;}
                 #hamicon {display: block; }
@@ -91,6 +101,7 @@
        </script>
     </head>
     <body>
+        <a id="skip-to-content" href="#content">Skip to Content</a>
         <nav>
             <figure><img src="../site-media/hamburger.png" id="hamicon" width="35" alt="hamburger icon" onclick="changenav();"></figure>
             <div id="navlinks">
@@ -102,6 +113,7 @@
     <main>
     <div>
             <h1>Misconceptions about Linguistics</h1>
+            <a id="content"></a>
         <div class="rowone">
         <figure>
         <img src="../site-media/linguistics-wordcloud.png" alt="Different terms that are relavent to linguistics displayed in a wordcloud" id="linguistics">

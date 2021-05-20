@@ -66,6 +66,16 @@
                 width: 350px;}
             #formalconvo {margin-top: 100px;}
             #thumbnails {margin: 0 auto; display: block;}
+            #skip-to-content {
+                position: absolute; 
+                left: -999px;
+                background-color: #f2f2f2; 
+                border: 1px solid #ECECEC;
+                }
+                #skip-to-content:focus {
+                position: absolute; 
+                left: 10px;
+                }
             @media only screen and (max-width: 600px) {
                 span {display: none;}
                 #hamicon {display: block;}
@@ -143,6 +153,7 @@
         </script>
     </head>
     <body>
+        <a id="skip-to-content" href="#content">Skip to Content</a>
             <nav>
                 <figure><img src="../site-media/hamburger.png" id="hamicon" width="35" alt="hamburger icon" onclick="changenav();"></figure>
                 <div id="navlinks">
@@ -156,6 +167,7 @@
             <figure>
                 <img src="../images/linguistics.png" alt="Everyday Conversation" id="everydayconvo">
             </figure>
+        <a id="content"></a>
             <p>
                 Linguistics is the study of languages. Now that overarching broad statement is easily broken down into the different fields of linguistics. Each of these branches of linguistics has its own specific focus, but they work together to give a greater understanding of human language.  The different branches of language structure and their respective specializations are:
             </p>
