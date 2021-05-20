@@ -65,8 +65,7 @@
                 float: left;
                 width: 350px;}
             #formalconvo {margin-top: 100px;}
-            #formalconvo, #casualconvo {max-height: 375px;}
-            #thumbnails: {margin: 0 auto; display: block;}
+            #thumbnails {margin: 0 auto; display: block;}
             @media only screen and (max-width: 600px) {
                 span {display: none;}
                 #hamicon {display: block;}
@@ -83,8 +82,12 @@
                     .thumbnails {
                     float: left;
                 }
-                .done {clear:both;}
+                #phonologythumb {float: left;}
                 #pragmaticsinfo {float: none;}
+                #linguisticinfo {
+                    max-width: 400px;
+                    margin: 0 auto;
+                    display: block;}
             }
         </style>
         <script>
@@ -214,10 +217,10 @@
             <div class="thumbnails">
                 <img src="../site-media/phonology-and-pragmatics.png" alt="phonology and pragmatics" id="phonologythumb" onclick="LinguisticsOff();PhonologyOn();">
                 <img src="../site-media/morphology.png" alt="morphology" id="morphologythumb" onclick="LinguisticsOff();MorphologyOn();">
-                <br> <br>
+
                 <img src="../site-media/syntax.png" alt="syntax" id="syntaxthumb" onclick="LinguisticsOff();SyntaxOn();">
                 <img src="../site-media/semantics.png" alt="semantics" id="semanticsthumb" onclick="LinguisticsOff();SemanticsOn();">
-                <br><br>
+
                 <img src="../site-media/pragmatics.png" alt="pragmatics" id="pragmaticsthumb" onclick="LinguisticsOff();PragmaticsOn();">
             </div>
         </div>
