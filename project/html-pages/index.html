@@ -43,7 +43,6 @@
             .clear {clear: both;}
             #bigimages {
                 float: left;
-                
             }
             #linguisticinfo {padding: 100px;}
             #morphology, #syntax, #semantics, #formalconvo, #casualconvo {
@@ -63,9 +62,8 @@
             }
             #pragmaticsinfo {
                 float: left;
-                width: 350px;}
+                width: 360px;}
             #formalconvo {margin-top: 100px;}
-            #thumbnails {margin: 0 auto; display: block;}
             #skip-to-content {
                 position: absolute; 
                 left: -999px;
@@ -76,6 +74,12 @@
                 position: absolute; 
                 left: 10px;
                 }
+            @media only screen and (min-width: 600px) {
+                .thumbnails {
+                    display: flex;
+                    flex-wrap: wrap;
+                    }
+            }
             @media only screen and (max-width: 600px) {
                 span {display: none;}
                 #hamicon {display: block;}
@@ -89,15 +93,14 @@
                     display: block;
                     margin: auto;
                     }
-                    .thumbnails {
+                .thumbnails {
                     float: left;
                 }
                 #phonologythumb {float: left;}
                 #pragmaticsinfo {float: none;}
                 #linguisticinfo {
                     max-width: 400px;
-                    margin: 0 auto;
-                    display: block;}
+                    }
             }
         </style>
         <script>
@@ -227,13 +230,17 @@
             </div>
             <div class="clear"></div>
             <div class="thumbnails">
-                <img src="../site-media/phonology-and-pragmatics.png" alt="phonology and pragmatics" id="phonologythumb" onclick="LinguisticsOff();PhonologyOn();">
-                <img src="../site-media/morphology.png" alt="morphology" id="morphologythumb" onclick="LinguisticsOff();MorphologyOn();">
-
-                <img src="../site-media/syntax.png" alt="syntax" id="syntaxthumb" onclick="LinguisticsOff();SyntaxOn();">
-                <img src="../site-media/semantics.png" alt="semantics" id="semanticsthumb" onclick="LinguisticsOff();SemanticsOn();">
-
-                <img src="../site-media/pragmatics.png" alt="pragmatics" id="pragmaticsthumb" onclick="LinguisticsOff();PragmaticsOn();">
+                <div class="ph">
+                    <img src="../site-media/phonology-and-pragmatics.png" alt="phonology and pragmatics" id="phonologythumb" onclick="LinguisticsOff();PhonologyOn();">
+                </div><div class="mo">
+                    <img src="../site-media/morphology.png" alt="morphology" id="morphologythumb" onclick="LinguisticsOff();MorphologyOn();">
+                </div><div class="sy">
+                    <img src="../site-media/syntax.png" alt="syntax" id="syntaxthumb" onclick="LinguisticsOff();SyntaxOn();">
+                </div><div class="se">
+                    <img src="../site-media/semantics.png" alt="semantics" id="semanticsthumb" onclick="LinguisticsOff();SemanticsOn();">
+                </div><div class="pr">
+                    <img src="../site-media/pragmatics.png" alt="pragmatics" id="pragmaticsthumb" onclick="LinguisticsOff();PragmaticsOn();">
+                </div>
             </div>
         </div>
         <div class="clear"></div>

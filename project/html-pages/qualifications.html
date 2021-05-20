@@ -57,11 +57,6 @@
             }
             #bio {background-color: #f2f2f2;border-radius: 1em;}
             .clear {clear:both;}
-            .flex {display: flex;}
-            .firstimage, .secondimage, .thirdimage {
-                flex: 1;
-                flex: wrap;
-                }
                 #skip-to-content {
                 position: absolute; 
                 left: -999px;
@@ -71,6 +66,13 @@
                 #skip-to-content:focus {
                 position: absolute; 
                 left: 10px;
+                }
+            @media only screen and (min-width: 900px) {
+                .flex {display: flex;}
+                .firstimage, .secondimage, .thirdimage {
+                flex: 1;
+                flex-wrap: wrap;
+                }
                 }
             @media only screen and (max-width: 600px) {
                 span {display: none;}
@@ -159,7 +161,6 @@
                 </div>
             </div>
         </div>
-        
     </div>
     </main>
     </body>
