@@ -65,6 +65,11 @@
             }
             #bio {background-color: #f2f2f2;border-radius: 1em;}
             .clear {clear:both;}
+            .flex {display: flex;}
+            .firstimage, .secondimage, .thirdimage {
+                flex: wrap;
+                flex: 1;
+                }
         </style>
          <script>
             function changenav () {
@@ -129,13 +134,17 @@
         </p>
         <div class="clear"></div>
             <h2>The list of topics that I wrote:</h2>
-        <ul>
-            <a href="../site-media/bilingual-education-paper.docx">Research Proposal for LIN 371 on Bilingual Education and the Effect on Social Interaction in Young Children </a>
-            <br>
-            <a href="../site-media/social-media-variation-proposal.docx"> Research Proposal for LIN 373 on The Effect of Social Media on the Variation of English</a>
-            <br>
-            <a href="../site-media/emoji-use-proposal.docx"> Library Based Research Paper for LIN 305 on How Emoji Use is Affected by and changes with age </a>
-        </ul>
+            <div class="flex">
+                <div class="firstimage">
+            <a href="../site-media/bilingual-education-paper.docx"><img src="../images/bilingual-paper-thumb.png" alt="thumbnail of Research Proposal for LIN 371 on Bilingual Education and the Effect on Social Interaction in Young Children"></a>
+                </div>
+                <div class="secondimage">
+            <a href="../site-media/social-media-variation-proposal.docx"> <img src="../images/social-media-thumb.png" alt="Research Proposal for LIN 373 on The Effect of Social Media on the Variation of English"></a>
+                </div>
+                <div class="thhirdimage">
+            <a href="../site-media/emoji-use-proposal.docx"> <img src="../images/emoji-paper-thumb.png" alt="Library Based Research Paper for LIN 305 on How Emoji Use is Affected by and changes with age"> </a>
+                </div>
+            </div>
         </div>
         
     </div>
