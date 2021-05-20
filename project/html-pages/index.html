@@ -43,9 +43,7 @@
             .clear {clear: both;}
             #bigimages {
                 float: left;
-                margin-right: 100px;
-                margin-top: 50px;
-                margin-bottom: 20px;
+                
             }
             #linguisticinfo {padding: 100px;}
             #morphology, #syntax, #semantics, #formalconvo, #casualconvo {
@@ -63,7 +61,12 @@
                 display: block;
                 margin: auto;
             }
-            #citation {color: #1586d1;}
+            #pragmaticsinfo {
+                float: left;
+                width: 350px;}
+            #formalconvo {margin-top: 100px;}
+            #formalconvo, #casualconvo {max-height: 375px;}
+            #thumbnails: {margin: 0 auto; display: block;}
             @media only screen and (max-width: 600px) {
                 span {display: none;}
                 #hamicon {display: block;}
@@ -77,6 +80,11 @@
                     display: block;
                     margin: auto;
                     }
+                    .thumbnails {
+                    float: left;
+                }
+                .done {clear:both;}
+                #pragmaticsinfo {float: none;}
             }
         </style>
         <script>
@@ -161,9 +169,7 @@
                 <img src="../images/semantics-photo-resized.png" alt="Semantics" id="semantics">
             </figure><figure>
                 <img src="../images/formal-convo-resized.png" alt="Formal Conversation Representation" id="formalconvo">
-            </figure><figure>
-                <img src="../images/casual-convo-resized.png" alt="Casual Conversation Representation" id="casualconvo">
-                </figure>
+            </figure>
             </div>
             <div id="linguisticinfo">
                 <div id="phonologyinfo">
@@ -198,23 +204,24 @@
                         <br> <br>
                         The photos on the left display two different environments and types of conversations.  The top photo is a business meeting while the bottom photo is a conversation happening amongst friends.  These different environments result in drastically different conversations and the way that the speakers use language differs depending on the environment they are in.
                     </p>
+                </div><div id="casualimage">
+                    <figure>
+                        <img src="../images/casual-convo-resized.png" alt="Casual Conversation Representation" id="casualconvo">
+                        </figure>
                 </div>
             </div>
-            <div id="thumbnails" class="clear">
-            
+            <div class="clear"></div>
+            <div class="thumbnails">
                 <img src="../site-media/phonology-and-pragmatics.png" alt="phonology and pragmatics" id="phonologythumb" onclick="LinguisticsOff();PhonologyOn();">
-            
                 <img src="../site-media/morphology.png" alt="morphology" id="morphologythumb" onclick="LinguisticsOff();MorphologyOn();">
-            
+                <br> <br>
                 <img src="../site-media/syntax.png" alt="syntax" id="syntaxthumb" onclick="LinguisticsOff();SyntaxOn();">
-                <br>
-            
                 <img src="../site-media/semantics.png" alt="semantics" id="semanticsthumb" onclick="LinguisticsOff();SemanticsOn();">
-            
+                <br><br>
                 <img src="../site-media/pragmatics.png" alt="pragmatics" id="pragmaticsthumb" onclick="LinguisticsOff();PragmaticsOn();">
-                
             </div>
         </div>
+        <div class="clear"></div>
         <br>
             <h2>Other Branches of Linguistics</h2>
             <p>
