@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Testing Flexbox</title>
+        <style>
+            .flex {
+                display: flex;
+                flex-wrap: wrap;
+                }
+            .one, .two, .three, .four, .five {flex: 1;}
+        </style>
+    </head>
+    <body>
+        <h1>testing flexboxes </h1>
+    <div class="flex">
+        <div class="one">
+            <img src="../site-media/phonology-and-pragmatics.png" alt="phonology and pragmatics" id="phonologythumb" onclick="LinguisticsOff();PhonologyOn();">
+        </div><div class="two">
+            <img src="../site-media/morphology.png" alt="morphology" id="morphologythumb" onclick="LinguisticsOff();MorphologyOn();">
+        </div><div class="three">
+            <img src="../site-media/syntax.png" alt="syntax" id="syntaxthumb" onclick="LinguisticsOff();SyntaxOn();">
+        </div><div class="four">
+            <img src="../site-media/semantics.png" alt="semantics" id="semanticsthumb" onclick="LinguisticsOff();SemanticsOn();">
+        </div><div class="five">
+            <img src="../site-media/pragmatics.png" alt="pragmatics" id="pragmaticsthumb" onclick="LinguisticsOff();PragmaticsOn();">
+        </div>
+    </div>
+    </body>
+</html>

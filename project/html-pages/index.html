@@ -39,10 +39,14 @@
                     font-family: 'Fira Sans', sans-serif;}
                 #hamicon {display: none;}
                 img {max-width: 100%;}
-            #everydayconvo {margin-right: 100px;}
             .clear {clear: both;}
             #bigimages {
                 float: left;
+            }
+            #slideshow-container {
+                background-color: #ECECEC;
+                width: 1200px;
+                margin: auto;
             }
             #linguisticinfo {padding: 100px;}
             #morphology, #syntax, #semantics, #formalconvo, #casualconvo {
@@ -50,15 +54,6 @@
             }
             #morphologyinfo, #syntaxinfo, #semanticsinfo, #pragmaticsinfo {
                 display: none;
-            }
-            #slideshow-container {
-                background-color: #ECECEC;
-                width: 1200px;
-                margin: auto;
-            }
-            #everydayconvo {
-                display: block;
-                margin: auto;
             }
             #pragmaticsinfo {
                 float: left;
@@ -74,11 +69,9 @@
                 position: absolute; 
                 left: 10px;
                 }
-            @media only screen and (min-width: 600px) {
-                .thumbnails {
-                    display: flex;
-                    flex-wrap: wrap;
-                    }
+            .flex {
+                display: flex; 
+                flex-wrap: wrap;
             }
             @media only screen and (max-width: 600px) {
                 span {display: none;}
@@ -93,10 +86,6 @@
                     display: block;
                     margin: auto;
                     }
-                .thumbnails {
-                    float: left;
-                }
-                #phonologythumb {float: left;}
                 #pragmaticsinfo {float: none;}
                 #linguisticinfo {
                     max-width: 400px;
@@ -229,20 +218,19 @@
                 </div>
             </div>
             <div class="clear"></div>
-            <div class="thumbnails">
-                <div class="ph">
+            <div class="flex">
+                <div class="one">
                     <img src="../site-media/phonology-and-pragmatics.png" alt="phonology and pragmatics" id="phonologythumb" onclick="LinguisticsOff();PhonologyOn();">
-                </div><div class="mo">
+                </div><div class="two">
                     <img src="../site-media/morphology.png" alt="morphology" id="morphologythumb" onclick="LinguisticsOff();MorphologyOn();">
-                </div><div class="sy">
+                </div><div class="three">
                     <img src="../site-media/syntax.png" alt="syntax" id="syntaxthumb" onclick="LinguisticsOff();SyntaxOn();">
-                </div><div class="se">
+                </div><div class="four">
                     <img src="../site-media/semantics.png" alt="semantics" id="semanticsthumb" onclick="LinguisticsOff();SemanticsOn();">
-                </div><div class="pr">
+                </div><div class="five">
                     <img src="../site-media/pragmatics.png" alt="pragmatics" id="pragmaticsthumb" onclick="LinguisticsOff();PragmaticsOn();">
                 </div>
             </div>
-        </div>
         <div class="clear"></div>
         <br>
             <h2>Other Branches of Linguistics</h2>
